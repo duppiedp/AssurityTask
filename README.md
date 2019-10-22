@@ -13,7 +13,8 @@ I did 2 different coding examples for your attention:
 [*Source File*](AssurityPowershell.ps1)
 
 I use PowerShell a lot and wanted to show how it could be used in this scenario.
-To run the test, you could simply download the ps1 file, then on any Windows machine run this command from the Windows key => Run console:
+To run the test, you could simply download the ps1 file, then on any Windows machine run this command from the 
+Windows key => Run console:
 
 `powershell.exe -file "localtion of downloaded ps1 file"`
 
@@ -25,4 +26,5 @@ for e.g.
 
 [*Source File*](AssurityPython.ps1)
 
-For the Python example, **it requires the 'requests' module** to be installed. (pip install requests).
+For the Python example, **it requires the 'requests' module** to be installed. (`pip install requests`).
+I used this module to handle the web request.
