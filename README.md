@@ -10,7 +10,7 @@ I did 2 different coding examples for your attention:
 
 ### 1. Powershell ### 
 
-[*Source File*](https://github.com/duppiedp/AssurityTask/AssurityPowershell.ps1)
+[*Source File*](AssurityPowershell.ps1)
 
 I use PowerShell a lot and wanted to show how it could be used in this scenario.
 To run the test, you could simply download the ps1 file, then on any Windows machine run this command from the Windows key => Run console:
@@ -23,6 +23,6 @@ for e.g.
 
 ### 2. Python ###
 
-[*Source File*](https://github.com/duppiedp/AssurityTask/AssurityPython.ps1)
+[*Source File*](AssurityPython.ps1)
 
 For the Python example, **it requires the 'requests' module** to be installed. (pip install requests).
