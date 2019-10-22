@@ -4,6 +4,16 @@
 # 2. CanRelist = TRUE
 # 3. The Promotions element with Name = "Gallery" has a Description that contains the text "2x larger image"
 ####
+# Version | Description
+# 000       Initial Check In
+# 001       Added comments to clarify
+####
+
+#### Overall Method
+# These tests will be performed in 3 different stages, for the 3 different steps.
+# Each step will run and the result will be added to a Results array.
+# A summary will be returned where the results will be returned as well as a pass rate.
+####
 
 #region Imports
 import requests
@@ -38,6 +48,8 @@ testCaseResult = []     #list for results
 
 #region function to add to results
 def AddResult(Test,Result,Comments = ""):
+    # This is a function that appends to my result list
+    # so I can output in the summary section
     testResultObj = [Test, Result, Comments]
     testCaseResult.append(testResultObj)
 #endregion
@@ -99,8 +111,10 @@ TestPass = False
 TestNr = 3
 TestFailComments = ""
 try:
+    #First, iterate through all the Promotions and look for  'Gallery' (001)
     for promoItem in apiJsonObj["Promotions"]:
         if (promoItem["Name"] == "Gallery"):
+            #Found Gallery, now we can run the test (001)
             if (TestCase in promoItem["Description"]):
                 print (bcolors.OKGREEN + "Pass")
                 TestPass = True
@@ -121,6 +135,7 @@ else:
 
 #region Summary
 #Output Test Results Summary
+# This section will output the result summary, with pass rate (001)
 print(bcolors.ENDC + bcolors.BOLD +bcolors.UNDERLINE + "Results of Test Run")
 failRate = 0
 failTotal = len(testCaseResult)

@@ -4,6 +4,10 @@
 # 2. CanRelist = TRUE
 # 3. The Promotions element with Name = "Gallery" has a Description that contains the text "2x larger image"
 ####
+# Version | Description
+# 000       Initial Check In
+# 001       Added comments to clarify
+####
 
 #### Overall Method
 # These tests will be performed in 3 different stages, for the 3 different steps.
@@ -127,6 +131,7 @@ if ($TestPass){
 
 #region Summary
 #Output Test Results Summary
+# This section will output the result summary, with pass rate (001)
 $PassRate = 0
 foreach ($key in $testCaseResult.GetEnumerator()) {
    write-host "Test $($key.Test) Result $($key.Result)"
