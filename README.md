@@ -24,7 +24,7 @@ for e.g.
 
 ### 2. Python ###
 
-[*Source File*](AssurityPython.ps1)
+[*Source File*](AssurityPython.py)
 
 For the Python example, **it requires the 'requests' module** to be installed. (`pip install requests`).
 I used this module to handle the web request.
